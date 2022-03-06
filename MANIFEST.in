@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include achat *.css
+recursive-include achat *.csv
+recursive-include achat *.html
+recursive-include achat *.ico
+recursive-include achat *.js
+recursive-include achat *.json
+recursive-include achat *.md
+recursive-include achat *.png
+recursive-include achat *.py
+recursive-include achat *.svg
+recursive-include achat *.txt
+recursive-exclude achat *.pyc

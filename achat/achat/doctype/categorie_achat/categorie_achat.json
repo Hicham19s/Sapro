@@ -1,0 +1,41 @@
+{
+ "autoname": "field:categorie_achat",
+ "creation": "2022-02-21 15:31:39.303569",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "categorie_achat"
+ ],
+ "fields": [
+  {
+   "fieldname": "categorie_achat",
+   "fieldtype": "Data",
+   "label": "Cat\u00e9gorie Achat",
+   "unique": 1
+  }
+ ],
+ "modified": "2022-02-22 14:44:06.775983",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Categorie Achat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

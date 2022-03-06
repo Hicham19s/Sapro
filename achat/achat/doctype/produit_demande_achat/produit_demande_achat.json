@@ -1,0 +1,36 @@
+{
+ "creation": "2022-02-22 14:58:51.547756",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code_produit",
+  "qtt_demande"
+ ],
+ "fields": [
+  {
+   "fieldname": "code_produit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Produit",
+   "options": "Produit"
+  },
+  {
+   "fieldname": "qtt_demande",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantit\u00e9 demand\u00e9e"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-02-22 14:58:51.547756",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Produit Demande Achat",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,86 @@
+{
+ "autoname": "field:designation",
+ "creation": "2022-02-21 17:51:30.474174",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "designation",
+  "produit_categorie",
+  "marque",
+  "code_produit",
+  "photo",
+  "type_produit",
+  "tva",
+  "uom"
+ ],
+ "fields": [
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "unique": 1
+  },
+  {
+   "fieldname": "produit_categorie",
+   "fieldtype": "Link",
+   "label": "Produit categorie",
+   "options": "Produit Categorie"
+  },
+  {
+   "fieldname": "marque",
+   "fieldtype": "Link",
+   "label": "Marque",
+   "options": "Marque"
+  },
+  {
+   "fieldname": "code_produit",
+   "fieldtype": "Data",
+   "label": "Code produit"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "type_produit",
+   "fieldtype": "Select",
+   "label": "Type prodiut",
+   "options": "Investissement\nConsommable\nMaintenance\nService\nAutre"
+  },
+  {
+   "fieldname": "tva",
+   "fieldtype": "Percent",
+   "label": "TVA"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "Unit\u00e9 par d\u00e9fault"
+  }
+ ],
+ "modified": "2022-02-22 14:48:08.643391",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Produit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

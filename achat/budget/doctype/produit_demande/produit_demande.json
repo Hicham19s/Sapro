@@ -1,0 +1,97 @@
+{
+ "creation": "2022-02-21 14:26:30.877313",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "produit",
+  "qte_produit",
+  "qte_revise",
+  "pu_estime",
+  "tva",
+  "montan_ht_r",
+  "montan_ht",
+  "montant_t",
+  "montant_t_r"
+ ],
+ "fields": [
+  {
+   "fieldname": "produit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Produit",
+   "options": "Produit Budget"
+  },
+  {
+   "fieldname": "qte_produit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qtt produit"
+  },
+  {
+   "fieldname": "pu_estime",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "PU estime"
+  },
+  {
+   "default": "0",
+   "fieldname": "qte_revise",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qtt revis\u00e9e"
+  },
+  {
+   "fetch_from": "produit.tva",
+   "fetch_if_empty": 1,
+   "fieldname": "tva",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TVA",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "montan_ht",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Montant HT",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "montant_t",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Montant T",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "montan_ht_r",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Montant HT R",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "montant_t_r",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Montant T R",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-02-21 14:59:35.671364",
+ "modified_by": "Administrator",
+ "module": "Budget",
+ "name": "Produit Demande",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

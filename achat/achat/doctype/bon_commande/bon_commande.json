@@ -1,0 +1,128 @@
+{
+ "autoname": "formatBon Commande-{YYYY}-{#####}",
+ "creation": "2022-02-21 17:51:50.014606",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "structure",
+  "facture_pro_format_num",
+  "column_break_3",
+  "fournisseur",
+  "date",
+  "section_break_6",
+  "table1",
+  "table2",
+  "section_break_9",
+  "produit_commande",
+  "section_break_11",
+  "montant_ht",
+  "column_break_13",
+  "montant_tva",
+  "section_break_15",
+  "montant_ttc"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "facture_pro_format_num",
+   "fieldtype": "Data",
+   "label": "Facture pro format N\u00b0"
+  },
+  {
+   "fieldname": "table1",
+   "fieldtype": "Table",
+   "options": "Table1"
+  },
+  {
+   "fieldname": "table2",
+   "fieldtype": "Table",
+   "options": "Table2"
+  },
+  {
+   "fieldname": "montant_ht",
+   "fieldtype": "Currency",
+   "label": "Montant HT"
+  },
+  {
+   "fieldname": "montant_ttc",
+   "fieldtype": "Currency",
+   "label": "Montant TTC"
+  },
+  {
+   "fieldname": "montant_tva",
+   "fieldtype": "Currency",
+   "label": "Montant TVA"
+  },
+  {
+   "fieldname": "produit_commande",
+   "fieldtype": "Table",
+   "label": "Produit Commande",
+   "options": "Produit Commande"
+  },
+  {
+   "fieldname": "fournisseur",
+   "fieldtype": "Link",
+   "label": "Fournisseur",
+   "options": "Fournisseur"
+  },
+  {
+   "fieldname": "structure",
+   "fieldtype": "Link",
+   "label": "Structure",
+   "options": "Structure"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2022-02-22 15:22:18.806501",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Bon commande",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

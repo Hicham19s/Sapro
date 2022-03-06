@@ -1,0 +1,80 @@
+{
+ "creation": "2022-02-21 17:51:41.291237",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code_produit",
+  "type",
+  "qte_demande",
+  "prix_unit_ht",
+  "tva",
+  "designation",
+  "montant",
+  "montant_t"
+ ],
+ "fields": [
+  {
+   "fieldname": "qte_demande",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantit\u00e9 demand\u00e9e"
+  },
+  {
+   "fetch_from": "code_produit.tva",
+   "fetch_if_empty": 1,
+   "fieldname": "tva",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Tva",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prix_unit_ht",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prix Unit HT"
+  },
+  {
+   "fieldname": "montant",
+   "fieldtype": "Data",
+   "label": "Montant"
+  },
+  {
+   "fieldname": "montant_t",
+   "fieldtype": "Data",
+   "label": "Montant TVA"
+  },
+  {
+   "fieldname": "code_produit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Produit",
+   "options": "Produit"
+  },
+  {
+   "fetch_from": "code_produit.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fetch_from": "code_produit.type_produit",
+   "fetch_if_empty": 1,
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-02-21 19:40:34.028153",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Produit Commande",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

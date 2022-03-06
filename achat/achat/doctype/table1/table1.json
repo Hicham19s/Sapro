@@ -1,0 +1,49 @@
+{
+ "creation": "2022-02-21 16:32:05.769423",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "delais_livraison",
+  "mode_expedition",
+  "emballage",
+  "marquage"
+ ],
+ "fields": [
+  {
+   "fieldname": "delais_livraison",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "D\u00e9lais livraison"
+  },
+  {
+   "fieldname": "mode_expedition",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mode d'expedition"
+  },
+  {
+   "fieldname": "emballage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Emballage"
+  },
+  {
+   "fieldname": "marquage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Marquage"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-02-21 16:32:26.334152",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Table1",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

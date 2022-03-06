@@ -1,0 +1,148 @@
+{
+ "autoname": "format:Budget-{YYYY}",
+ "creation": "2022-02-21 13:53:26.458563",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "structure",
+  "date_budget",
+  "column_break_3",
+  "date_revision",
+  "section_break_5",
+  "produits_budget_demande",
+  "section_break_7",
+  "totale",
+  "tva",
+  "column_break_9",
+  "montant_ttc",
+  "section_break_11",
+  "totale_r",
+  "tva_r",
+  "column_break_14",
+  "montant_ttc_r"
+ ],
+ "fields": [
+  {
+   "fieldname": "structure",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Structure",
+   "options": "Structure",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_budget",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_revision",
+   "fieldtype": "Date",
+   "label": "Date revision"
+  },
+  {
+   "fieldname": "produits_budget_demande",
+   "fieldtype": "Table",
+   "label": "Produit Demande",
+   "options": "Produit Demande",
+   "reqd": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "totale",
+   "fieldtype": "Currency",
+   "label": "Totale",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "tva",
+   "fieldtype": "Currency",
+   "label": "TVA",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "montant_ttc",
+   "fieldtype": "Currency",
+   "label": "Montant TTC",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "totale_r",
+   "fieldtype": "Currency",
+   "label": "Totale R",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "tva_r",
+   "fieldtype": "Currency",
+   "label": "TVA R",
+   "read_only": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "montant_ttc_r",
+   "fieldtype": "Currency",
+   "label": "Montant TTC R",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2022-03-06 09:56:22.595146",
+ "modified_by": "Administrator",
+ "module": "Budget",
+ "name": "Budget",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

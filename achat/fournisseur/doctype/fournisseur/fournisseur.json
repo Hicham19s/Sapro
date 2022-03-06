@@ -1,0 +1,78 @@
+{
+ "autoname": "field:nom",
+ "creation": "2022-02-21 15:45:19.766399",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom",
+  "famille",
+  "column_break_3",
+  "telephone",
+  "section_break_5",
+  "adresse",
+  "contact_fournisseur"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom",
+   "unique": 1
+  },
+  {
+   "fieldname": "adresse",
+   "fieldtype": "Table",
+   "label": "Adresse",
+   "options": "Adresse"
+  },
+  {
+   "fieldname": "contact_fournisseur",
+   "fieldtype": "Table",
+   "label": "Contact fournisseur",
+   "options": "Contact Fournisseur"
+  },
+  {
+   "fieldname": "famille",
+   "fieldtype": "Select",
+   "label": "Famille",
+   "options": "Etatique National\nPriv\u00e9 National\n\u00c9tranger"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Text",
+   "label": "T\u00e9l\u00e9phone"
+  }
+ ],
+ "modified": "2022-02-23 09:48:08.416972",
+ "modified_by": "Administrator",
+ "module": "Fournisseur",
+ "name": "Fournisseur",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

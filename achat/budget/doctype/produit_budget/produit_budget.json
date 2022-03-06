@@ -1,0 +1,54 @@
+{
+ "autoname": "field:designation",
+ "creation": "2022-02-21 14:24:27.984301",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "designation",
+  "produit_categorie",
+  "tva"
+ ],
+ "fields": [
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "unique": 1
+  },
+  {
+   "fieldname": "produit_categorie",
+   "fieldtype": "Link",
+   "label": "Produit Categorie",
+   "options": "Produit Categorie"
+  },
+  {
+   "fieldname": "tva",
+   "fieldtype": "Percent",
+   "label": "TVA"
+  }
+ ],
+ "modified": "2022-02-22 14:43:35.435550",
+ "modified_by": "Administrator",
+ "module": "Budget",
+ "name": "Produit Budget",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

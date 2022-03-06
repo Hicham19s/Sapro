@@ -1,0 +1,42 @@
+{
+ "creation": "2022-02-21 16:34:38.811267",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "condition_reglement",
+  "banque",
+  "documents_direct"
+ ],
+ "fields": [
+  {
+   "fieldname": "condition_reglement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Condition de r\u00e9glement"
+  },
+  {
+   "fieldname": "banque",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Banque"
+  },
+  {
+   "fieldname": "documents_direct",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Documents \u00e0 nous envoyer directement"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-02-22 15:36:04.284976",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Table2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

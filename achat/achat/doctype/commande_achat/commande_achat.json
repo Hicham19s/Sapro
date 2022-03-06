@@ -1,0 +1,141 @@
+{
+ "autoname": "format:Commande Achat-{YYYY}-{####}",
+ "creation": "2022-02-22 14:30:39.995683",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "structure",
+  "consultation",
+  "date",
+  "column_break_4",
+  "fournisseur",
+  "etat_commande",
+  "section_break_7",
+  "bon_commande",
+  "column_break_9",
+  "facture",
+  "section_break_11",
+  "amended_from",
+  "bon_livraison_pdf",
+  "column_break_14",
+  "contrat"
+ ],
+ "fields": [
+  {
+   "fieldname": "consultation",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Consultation",
+   "options": "TCO Simple\nConsultation ADOC\nAppel Offre",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fournisseur",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fournisseur",
+   "options": "Fournisseur",
+   "reqd": 1
+  },
+  {
+   "fieldname": "etat_commande",
+   "fieldtype": "Data",
+   "label": "Etat Commande"
+  },
+  {
+   "fieldname": "contrat",
+   "fieldtype": "Attach",
+   "label": "Contrat"
+  },
+  {
+   "fieldname": "structure",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Structure",
+   "options": "Structure",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "bon_commande",
+   "fieldtype": "Link",
+   "label": "Bon Commande",
+   "options": "Bon commande"
+  },
+  {
+   "fieldname": "bon_livraison_pdf",
+   "fieldtype": "Attach",
+   "label": "Bon Livraison"
+  },
+  {
+   "fieldname": "facture",
+   "fieldtype": "Link",
+   "label": "Facture",
+   "options": "Facture"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Commande Achat",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2022-03-06 09:41:42.008205",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Commande Achat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

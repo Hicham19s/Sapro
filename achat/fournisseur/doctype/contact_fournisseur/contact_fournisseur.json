@@ -1,0 +1,58 @@
+{
+ "autoname": "field:nom",
+ "creation": "2022-02-21 15:42:45.457472",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom",
+  "prenom",
+  "num_tel",
+  "num_fix",
+  "adresse_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom",
+   "unique": 1
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "num_tel",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Num\u00e9ro T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "num_fix",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Num\u00e9ro Fixe"
+  },
+  {
+   "fieldname": "adresse_email",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Adresse email"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-02-22 15:12:02.834665",
+ "modified_by": "Administrator",
+ "module": "Fournisseur",
+ "name": "Contact Fournisseur",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,271 @@
+{
+ "autoname": "format:Facture-{YYYY}-{####}",
+ "creation": "2022-02-21 19:54:10.138438",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fournisseur",
+  "fournisseur1",
+  "num_fact",
+  "num_fact1",
+  "date_facture",
+  "date_facture1",
+  "date_decheance1",
+  "date_decheance",
+  "column_break_5",
+  "num_bl",
+  "num_bl1",
+  "date_bl",
+  "date_bl1",
+  "facture_davoire",
+  "facture_parent",
+  "section_break_15",
+  "items",
+  "section_break_17",
+  "total_ht_1",
+  "total_ht",
+  "tva_1",
+  "tva",
+  "column_break_20",
+  "total_ttc_1",
+  "total_ttc",
+  "section_break_22",
+  "payement_tranche",
+  "facture",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.facture_davoire== '0'",
+   "fieldname": "fournisseur",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fournisseur",
+   "options": "Fournisseur",
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval:doc.facture_davoire== '0'",
+   "fieldname": "num_fact",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Num\u00e9ro facture"
+  },
+  {
+   "default": "Today",
+   "depends_on": "eval:doc.facture_davoire== '0'",
+   "fieldname": "date_facture",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date facture"
+  },
+  {
+   "depends_on": "eval:doc.facture_davoire== '0'",
+   "fieldname": "date_decheance",
+   "fieldtype": "Date",
+   "label": "date d'\u00e9ch\u00e9ance"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.facture_davoire== '0'",
+   "fieldname": "num_bl",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Num\u00e9ro BL"
+  },
+  {
+   "depends_on": "eval:doc.facture_davoire== '0'",
+   "fieldname": "date_bl",
+   "fieldtype": "Date",
+   "label": "Date BL"
+  },
+  {
+   "default": "0",
+   "fieldname": "facture_davoire",
+   "fieldtype": "Check",
+   "label": "Facture d'avoire"
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fieldname": "facture_parent",
+   "fieldtype": "Link",
+   "label": "Facture parnet",
+   "options": "Facture"
+  },
+  {
+   "depends_on": "eval:doc.facture_davoire== '0'\n",
+   "fetch_if_empty": 1,
+   "fieldname": "tva",
+   "fieldtype": "Data",
+   "label": "TVA",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.facture_davoire== '0'",
+   "fetch_if_empty": 1,
+   "fieldname": "total_ht",
+   "fieldtype": "Currency",
+   "label": "Total HT",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.facture_davoire== '0'",
+   "fetch_if_empty": 1,
+   "fieldname": "total_ttc",
+   "fieldtype": "Currency",
+   "label": "Total TTC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_if_empty": 1,
+   "fieldname": "total_ht_1",
+   "fieldtype": "Currency",
+   "label": "Total HT",
+   "read_only": 1
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_if_empty": 1,
+   "fieldname": "tva_1",
+   "fieldtype": "Currency",
+   "label": "TVA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_if_empty": 1,
+   "fieldname": "total_ttc_1",
+   "fieldtype": "Currency",
+   "label": "Total TTC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payement_tranche",
+   "fieldtype": "Data",
+   "label": "Payement Tranche"
+  },
+  {
+   "fieldname": "facture",
+   "fieldtype": "Data",
+   "label": "Dossier join"
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_from": "facture_parent.fournisseur",
+   "fieldname": "fournisseur1",
+   "fieldtype": "Link",
+   "label": "Fournisseur",
+   "options": "Fournisseur",
+   "read_only": 1
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_from": "facture_parent.num_fact",
+   "fetch_if_empty": 1,
+   "fieldname": "num_fact1",
+   "fieldtype": "Data",
+   "label": "Num\u00e9ro facture",
+   "read_only": 1
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_from": "facture_parent.date_facture",
+   "fetch_if_empty": 1,
+   "fieldname": "date_facture1",
+   "fieldtype": "Date",
+   "label": "Date facture",
+   "read_only": 1
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_from": "facture_parent.date_decheance",
+   "fetch_if_empty": 1,
+   "fieldname": "date_decheance1",
+   "fieldtype": "Date",
+   "label": "Date d'\u00e9ch\u00e9ance",
+   "read_only": 1
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_from": "facture_parent.num_bl",
+   "fetch_if_empty": 1,
+   "fieldname": "num_bl1",
+   "fieldtype": "Data",
+   "label": "Num\u00e9ro BL",
+   "read_only": 1
+  },
+  {
+   "depends_on": "facture_davoire",
+   "fetch_from": "facture_parent.date_bl",
+   "fetch_if_empty": 1,
+   "fieldname": "date_bl1",
+   "fieldtype": "Date",
+   "label": "Date bl",
+   "read_only": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Produit ",
+   "options": "Produit Facture"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Facture",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2022-03-06 10:08:46.757874",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Facture",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,87 @@
+{
+ "autoname": "format:Demande-{YYYY}",
+ "creation": "2022-02-21 15:31:49.705422",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_demande",
+  "budget",
+  "column_break_4",
+  "amended_from",
+  "etat_demande",
+  "categorie_achat",
+  "section_break_6",
+  "produits_demande"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date_demande",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "etat_demande",
+   "fieldtype": "Data",
+   "label": "Etat Demande"
+  },
+  {
+   "fieldname": "categorie_achat",
+   "fieldtype": "Link",
+   "label": "Categorie Achat",
+   "options": "Categorie Achat"
+  },
+  {
+   "fieldname": "produits_demande",
+   "fieldtype": "Table",
+   "label": "Produit demande",
+   "options": "Produit Demande Achat"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Link",
+   "label": "Budget",
+   "options": "Budget"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Amended From",
+   "options": "Demande Achat"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2022-02-22 14:59:24.517223",
+ "modified_by": "Administrator",
+ "module": "Achat",
+ "name": "Demande Achat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
